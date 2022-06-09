@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Quicksand&display=swap');
+
+body {
+    max-width: 500px;
+    margin: auto;
+  }
+
+h1, footer {
+    text-align: center;
+    background-color: rgb(222, 175, 244);
+    border: 20px;
+    border-radius: 25px;
+}
+
+#time {
+    color: rgb(101, 101, 101);
+}
+
+p {
+    margin: 10px;
+}
+
+p, h2, li {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+}
