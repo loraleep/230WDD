@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Documents/GitHub/230WDD"
+		},
+		{
+			"path": "../css"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portal"
+	}
+}
