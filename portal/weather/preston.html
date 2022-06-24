@@ -4,96 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Weather</title>
+    <title>Weekly Weather</title>
+    <link rel="icon" type="favicon" href="images/logo.png">
+    <link rel="stylesheet" href="/lesson2/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
-        <div class="header">
-            <img class="logo" src="/portal/lesson2/logo.png">
-            <div class="title">
-                <h1>Weekly Weather</h1>
-                <h4>motto / catch phrase</h4>
-            </div>
+        <img class="logo" src="images/logo.png"/>
+        <div class="moto">
+            <h1>Weekly Weather</h1>
+            <p>Weather is like a box of chocolates, you never know what your going to get.</p>
+        </div>
 
-        </div>
-        <div class="container">
-            <nav>
-                <div class="toggle active">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Preston</a></li>
-                        <li><a href="#">Soda Springs</a></li>
-                        <li><a href="#">Fish Haven</a></li>
-                        <li><a href="#">Storm Center</a></li>
-                        <li><a href="#">Gallery</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav id="hamNav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+          
+            <div id="hamItems">
+              <a href="#">Home</a>
+              <a href="#">Preston</a>
+              <a href="#">Soda Springs</a>
+              <a href="#">Fish Haven</a>
+              <a href="#">Storm Center</a>
+              <a href="#">Gallery</a>
+            </div>
+          </nav>
     </header>
     <main>
-        <h2>Preston Idaho</h2>
-        <section class="hero">
-            <p>hero</p>
-            <img/>
-        </section>
-        <section class="weather">
+        <h1 class="title">Preston Idaho</h1>
+        <img class="hero" src="images/potato.jpg"/>
+        <div class="sum">
             <h3>Weather Summary</h3>
-        </section>
-        <section class="two">
-            <h3>Five Day Forcast</h3>
-            <div class="forecast">
-                <div>
+            <p>Weather Stuff</p>
+        </div>
+        <div class="forecast">
+            <h2>Five Day Forecast</h2>
+            <div class="apiforecast">
+                <div class="one">
                     <p>One</p>
                 </div>
-                <div>
+                <div class="two">
                     <p>Two</p>
                 </div>
-                <div>
+                <div class="three">
                     <p>Three</p>
                 </div>
-                <div>
+                <div class="four">
                     <p>Four</p>
                 </div>
-                <div>
+                <div class="five">
                     <p>Five</p>
                 </div>
-            </div>
-           
-        </section>
-        <section class="article">
-            <h3>Article Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque praesentium sapiente ipsam fugiat totam repellat nostrum, assumenda maxime repellendus sint.</p>
-            <div>
 
             </div>
-        </section>
+        </div>
+        <div class="article">
+            <div class="words">
+                <h2>Napoleon Dynamite</h2>
+                <p>Napoleon Dynamite was famously filmed in Preston Idaho. Napoleon wears a ricks college shirt in the movie, and went to Preston High School, they actually have a happy hands club! "ChapStick, llamas, and tater tots are just a few things that appear in Napoleon Dynamite, a cult film shot for a mere $400,000 that went on to gross $44.5 million. In 2002, Brigham Young University film student Jared Hess filmed a black-and-white short, Peluca, with his classmate Jon Heder. The film got accepted into the Slamdance Film Festival, which gave Hess the courage to adapt it into a feature. Hess used his real-life upbringing in Preston, Idaho—he had six brothers and his mom owned llamas—to form the basis of the movie, about a nerdy teenager named Napoleon (Heder) who encourages his friend Pedro (Efren Ramirez) to run for class president.
+    
+                    In 2004, the indie film screened at Sundance, and was quickly purchased by Fox Searchlight and Paramount, then released less than six months later. Today, the film remains so popular that in 2016 Pedro and Napoleon reunited for a cheesy tots Burger King commercial. To celebrated the film's 15th anniversary, here are some facts about the ever-quotable comedy."</p>
+                    <a href="https://www.mentalfloss.com/article/503099/10-sweet-facts-about-napoleon-dynamite">mentalfloss.com</a>
+            </div>
+            
+                <img class="napoleon" src="images/napoleon.jpeg">
+        </div>
     </main>
     <footer>
-        <section class="map">
-            <p>map</p>
-        </section>
-
-        <section  class="contact">
+        <div class="map">
+            <img class="mapimg" src="images/map.jpg"/>
+        </div>
+        <div class="info">
             <h3>Contact Information</h3>
-            <div>
-
-            </div>
-            <div>
-    
-            </div>
-            <div>
-    
-            </div>
-        </section>
-
+            <p>location address</p>
+            <p>telephone number</p>
+            <p>email address</p>
+        </div>
+        <div class="socials">
+            <img class="social" src="images/fb.png"/>
+            <img class="social" src="images/insta.png"/>
+            <img class="social" src="images/twitter.png"/>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>
