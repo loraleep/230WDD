@@ -42,7 +42,7 @@ nav {
   display: none; 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   #hamNav label { 
     display: inline-block; 
   }
@@ -146,16 +146,14 @@ nav {
 
 .social {
   max-width: 50px;
-  padding:10px;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  width: right;
+  padding-right:10px;
 }
 
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding-top: 100px;
 }
 
 .mapimg {
@@ -167,4 +165,62 @@ footer {
 .info {
   grid-column: 2/3;
   grid-row: 1/2;
+}
+
+
+@media only screen and (max-width: 900px) {
+  body, .hero {
+    max-width: 500px;
+  }
+
+  .sum {
+    display: block;
+    float: none;
+    left: 0px;
+    bottom: 0px;
+    z-index: 0;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+    font-weight: bold;
+    max-width: 500px;
+    border: none;
+    border-radius: none;
+}
+#hamNav {
+  background: none; 
+ }
+
+ #hamNav, #hamItems a {
+  color: black;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.words {
+  grid-column: 1/2;
+}
+
+.napoleon {
+  grid-column: 1/2;
+}
+
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.mapimg {
+  grid-column: 1/2;
+  padding-bottom: 100px;
+}
+
+.info {
+  grid-column: 1/2;
+}
 }
