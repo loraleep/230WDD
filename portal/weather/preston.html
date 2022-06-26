@@ -33,10 +33,16 @@
     </header>
     <main>
         <h1 class="title">Preston Idaho</h1>
-        <img class="hero" src="images/potato.jpg"/>
+        <img class="hero" srcset="images/potato.jpg 800w,
+        images/potato.jpg 800w"
+     sizes="(max-width: 600px) 480px,
+            800px"
+     src="images/potato.jpg"
+     alt="potato">
         <div class="sum">
             <h3>Weather Summary</h3>
-            <p>Weather Stuff</p>
+            <p>Windchill</p>
+            <p>Temperature</p>
         </div>
         <div class="forecast">
             <h2>Five Day Forecast</h2>
@@ -80,8 +86,6 @@
             <p>location address</p>
             <p>telephone number</p>
             <p>email address</p>
-        </div>
-        <div class="socials">
             <img class="social" src="images/fb.png"/>
             <img class="social" src="images/insta.png"/>
             <img class="social" src="images/twitter.png"/>
