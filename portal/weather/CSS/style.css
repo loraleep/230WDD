@@ -167,6 +167,15 @@ footer {
   grid-row: 1/2;
 }
 
+@media only screen and (max-width: 500px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 500px;
+  }
+}
+
 
 @media only screen and (max-width: 900px) {
   body, .hero {
@@ -223,4 +232,30 @@ footer {
 .info {
   grid-column: 1/2;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  max-width: 700px;
 }
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery img {
+  max-width: 300px;
+}
+
+
+
+.gallery img[data-src] {
+  filter: blur(0.2em);
+} 
