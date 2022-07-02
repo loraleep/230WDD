@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Weather</title>
+    <link rel="icon" type="favicon" href="images/logo.png">
+    <link rel="stylesheet" href="/lesson2/normalize.css">
+    <link rel="stylesheet" href="/weather/CSS/style.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="/weather/images/logo.png"/>
+        <div class="moto">
+            <h1>Weekly Weather</h1>
+            <p>Weather is like a box of chocolates, you never know what your going to get.</p>
+        </div>
+
+        <nav id="hamNav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+          
+            <div id="hamItems">
+              <a href="/weather/preston.html">Home</a>
+              <a href="#">Preston</a>
+              <a href="#">Soda Springs</a>
+              <a href="#">Fish Haven</a>
+              <a href="#">Storm Center</a>
+              <a href="/weather/gallery/gallery.html">Gallery</a>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <form method="post" action="#" class="grid">
+            <fieldset>
+                <label for="name">Full Name:
+                    <input type="text" name="name" minlength="5"></label>
+
+                    <label>eMail:
+                        <input type="email" name="email" placeholder="user@email.org"></label>
+
+                    <label>Phone:
+                        <input type="tel" name="phone" placeholder="###-###-####">
+                    </label>
+
+                <label for="zip">Zip Code:
+                    <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"></label>
+
+
+                <label>Storm Date:
+                    <input type="date" name="theDate"></label><br>
+                <hr>
+
+
+            
+                <label>
+                    <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+                        <option value="" disabled selected>Storm Type</option>
+                        <option value="Flash Flood">Flash Flood</option>
+                        <option value="Hail">Hail</option>
+                        <option value="Hurricane">Hurricane</option>
+                        <option value="Thunderstorm">Thundertorm</option>
+                        <option value="Tornado">Tornado</option>
+                    </select></label>
+
+                    <fieldset>
+                        <label class="flexly" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                        </label>
+                
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                
+                        <br><br>
+        
+        
+        
+                            <label>
+                                <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+                                    <option value="" disabled selected>Storm Region</option>
+                                    <option value="Preston">Preston</option>
+                                    <option value="Soda Springs">Soda Springs</option>
+                                    <option value="Fish Haven">Fish Haven</option>
+                                </select></label>
+                    </fieldset>
+                
+                <fieldset class="nestedfieldset">
+                    <legend>User in-danger level <em>(Choose one)</em></legend>
+                    <div class="selection">
+                        <input type="radio" name="time" id="time1" value="Yes" checked>
+                        <label for="time1">Yes</label>
+                        <input type="radio" name="time" id="time2" value="Maybe">
+                        <label for="time2">Maybe</label>
+                        <input type="radio" id="time3" name="time" value="No">
+                        <label for="time3">No</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+        
+            <div class="buttons bottom">
+        
+                <input type="submit" class="sbutton"><br>
+            </div>
+        
+        </form>
+        
+        <div id="selected"></div>
+    </main>
+
+    </main>
+    <footer>
+        <div class="map">
+            <img class="mapimg" src="/weather/images/map.jpg"/>
+        </div>
+        <div class="info">
+            <h3>Contact Information</h3>
+            <p>location address</p>
+            <p>telephone number</p>
+            <p>email address</p>
+            <img class="social" src="/weather/images/fb.png"/>
+            <img class="social" src="/weather/images/insta.png"/>
+            <img class="social" src="/weather/images/twitter.png"/>
+        </div>
+    </footer>
+    <script src="scriptin.js"></script>
+</body>
+</html>
