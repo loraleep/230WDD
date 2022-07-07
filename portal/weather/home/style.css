@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Ubuntu:wght@700&display=swap');
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(4, 4, 102);
+    padding-left: 20px;
+}
+
+p, nav, li {
+    font-family: 'Karla', sans-serif;
+    padding-left: 20px;
+
+}
+
+
+img {
+    max-width: 250px;
+}
+
+.preston, .haven, .springs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section {
+    background-color: rgb(176, 209, 232);
+    margin: 50px;
+    padding: 20px;
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        max-width: 1000px;
+        background-color: rgb(176, 209, 232);
+    }
+    h2 {
+        text-shadow: 2px 2px #99e0ff;
+      }
+    
+
+    h4 {
+        font-family: 'Karla', sans-serif;
+    }
+
+    .prestonp, .havenp, .springsp {
+        background-color: rgb(255, 255, 188);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .prestonp {
+        grid-row: 1/2;
+    }
+    .preston {
+        grid-column: 2/3;
+    }
+    .preston img {
+        grid-row: 2/3;
+    }
+
+    .havenp {
+        grid-row: 1/2;
+    }
+    .haven {
+        grid-column: 1/2;
+    }
+    .haven img {
+        grid-row: 2/3;
+    }
+    .springsp {
+        grid-row: 1/2;
+    }
+    .springs {
+        grid-column: 3/4;
+    }
+    .springs img {
+        grid-row: 2/3;
+    }
+
+  }
+
