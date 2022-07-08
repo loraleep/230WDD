@@ -40,9 +40,18 @@
      src="images/potato.jpg"
      alt="potato">
         <div class="sum">
-            <h3>Weather Summary</h3>
-            <p>Windchill</p>
-            <p>Temperature</p>
+            <section class="weather">
+       
+                <h2>Weather</h2>
+                <div>
+                  <img id="icon" src="https://via.placeholder.com/60" alt="">
+                  <h3 id="temp">65</h3><h3>&#176;F</h3>
+                </div>
+                <h4 id="desc">Sunny</h4>
+                <h5>Wind Speed: <span id="speed">3</span> mph</h5>
+                <h5>Wind Chill: <span id="chill"></span></h5>
+                
+              </section>
         </div>
         <div class="forecast">
             <h2>Five Day Forecast</h2>
@@ -91,5 +100,6 @@
             <img class="social" src="images/twitter.png"/>
         </div>
     </footer>
+    <script src="js/windChill.js"></script>
 </body>
 </html>
